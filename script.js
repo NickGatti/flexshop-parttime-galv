@@ -52,6 +52,10 @@ let createShopItemList = ( ( list, side, index ) => {
             div = document.createElement( 'div' );
             div.innerHTML = list[ key ][ i ].name;
             div.addEventListener( 'click', ( () => {
+                document.querySelector( 'storeContent' )
+                    .innerHTML = '';
+                document.querySelector( 'store' )
+                    .innerHTML = '';
                 createShopItemList( items, key, i );
             } ) );
             document.getElementById( key + 'inner' )

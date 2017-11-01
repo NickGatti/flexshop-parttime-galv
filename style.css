@@ -8,8 +8,8 @@ body {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    align-items: stretch;
-    align-content: stretch;
+    align-items: center;
+    align-content: center;
 }
 
 .innerWrapperDiv {
@@ -27,4 +27,9 @@ body {
     min-height: 20%;
     height: auto;
     margin: 1em;
+}
+
+img {
+    max-width: 50%;
+    height: auto;
 }
