@@ -2,28 +2,7 @@
 
     <head>
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-        <style>
-            body {
-                margin: 0;
-                text-decoration: none;
-                font-family: 'Lato', sans-serif;
-            }
-
-            .wrapper {
-                display: flex;
-                flex-flow: column nowrap;
-                justify-content: center;
-                align-items: stretch;
-                align-content: stretch;
-            }
-
-            .outerDiv {
-                width: 100%;
-                min-height: 20%;
-                height: auto;
-                margin: 1em;
-            }
-        </style>
+        <link rel="stylesheet" href='./style.css'>
     </head>
 
     <body>
@@ -33,57 +12,15 @@
                 <h1>Donnie Shop</h1>
             </div>
 
-            <div class='outerDiv'>
+            <div id='shop' class='outerDiv'>
                 <div>
                     <h2>Dog Toys</h2>
                 </div>
-                <div>
-                    <ul>
-                        <li>Edibles
-                            <ul>
-                        </li>
-                        <li>Organic Raw Hide</li>
-                        <li>Natural Treats</li>
-                        <li>Holsitic Kibble</li>
-                        <li>Organic Freeze Dried</li>
-                        </ul>
-                        <li>Non-Edible
-                            <ul>
-                        </li>
-                        <li>BlinkBeep&#8482; Fetch Toys</li>
-                        <li>BPA Free Tug Toy</li>
-                        <li>Tear Free Beds</li>
-                        </ul>
-                    </ul>
-                </div>
             </div>
-        </div>
 
     </body>
 
-    <script>
-        let items = {
-            edible: {
-                [{
-                    name: 'Organic Raw Hide'
-                }, {
-                    name: 'Natural Treats'
-                }, {
-                    name: 'Holistic Kibble'
-                }, {
-                    name: 'Organic Freeze Dried'
-                }]
-            },
-            non_edible: {
-                [{
-                    name: 'BlinkBeep&#8482; Fetch Toys'
-                }, {
-                    name: 'BPA Free Tug Toys'
-                }, {
-                    name: 'Tear Free Beds'
-                }]
-            }
-        }
+    <script src='./script.js'>
     </script>
 
 </html>
