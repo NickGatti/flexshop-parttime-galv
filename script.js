@@ -31,7 +31,7 @@ let items = {
     } ]
 };
 
-let createShopItemList = ( ( list ) => {
+let createShopItemList = ( ( list, side, index ) => {
     let div = null;
     let ul = null;
     let li = null;
@@ -51,10 +51,21 @@ let createShopItemList = ( ( list ) => {
         for ( let i = 0; i < list[ key ].length; i++ ) {
             div = document.createElement( 'div' );
             div.innerHTML = list[ key ][ i ].name;
+            div.addEventListener( 'click', ( () => {
+                createShopItemList( items, key, i );
+            } ) );
             document.getElementById( key + 'inner' )
                 .appendChild( div );
         }
     }
+    if ( side ) {
+        let img = document.createElement( 'img' );
+        img.src = list[ side ][ index ].img;
+        document.getElementById( 'storeContent' )
+            .appendChild( img );
+    }
+
 } );
 
-createShopItemList( items );
+
+createShopItemList( items, false, false );

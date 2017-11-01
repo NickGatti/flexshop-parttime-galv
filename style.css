@@ -6,10 +6,20 @@ body {
 
 .wrapper {
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: row wrap;
     justify-content: center;
     align-items: stretch;
     align-content: stretch;
+}
+
+.innerWrapperDiv {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+    width: 50%;
+    height: auto;
 }
 
 .outerDiv {
