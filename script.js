@@ -31,45 +31,52 @@ let items = {
     } ]
 };
 
-let createShopItemList = ( ( list, side, index ) => {
+let createShopItemList = ( ( list, side, index, makeStore ) => {
     let div = null;
     let ul = null;
     let li = null;
     for ( let key in list ) {
-        ul = document.createElement( 'ul' );
-        li = document.createElement( 'li' );
-        li.innerHTML = key;
-        ul.id = key;
-        document.getElementById( 'shop' )
-            .appendChild( ul );
-        document.getElementById( key )
-            .appendChild( li );
-        ul = document.createElement( 'ul' );
-        ul.id = key + 'inner';
-        document.getElementById( key )
-            .appendChild( ul );
-        for ( let i = 0; i < list[ key ].length; i++ ) {
-            div = document.createElement( 'div' );
-            div.innerHTML = list[ key ][ i ].name;
-            div.addEventListener( 'click', ( () => {
-                document.querySelector( 'storeContent' )
-                    .innerHTML = '';
-                document.querySelector( 'store' )
-                    .innerHTML = '';
-                createShopItemList( items, key, i );
-            } ) );
-            document.getElementById( key + 'inner' )
-                .appendChild( div );
+        if ( makeStore ) {
+            ul = document.createElement( 'ul' );
+            li = document.createElement( 'li' );
+            li.innerHTML = key;
+            ul.id = key;
+            document.getElementById( 'shop' )
+                .appendChild( ul );
+            document.getElementById( key )
+                .appendChild( li );
+            ul = document.createElement( 'ul' );
+            ul.id = key + 'inner';
+            document.getElementById( key )
+                .appendChild( ul );
+            for ( let i = 0; i < list[ key ].length; i++ ) {
+                div = document.createElement( 'div' );
+                div.innerHTML = list[ key ][ i ].name;
+                div.addEventListener( 'click', ( () => {
+                    document.getElementById( 'storeContent' )
+                        .innerHTML = '';
+                    createShopItemList( items, key, i, false );
+                } ) );
+                document.getElementById( key + 'inner' )
+                    .appendChild( div );
+            }
         }
     }
     if ( side ) {
         let img = document.createElement( 'img' );
+        let p = document.createElement( 'p' );
         img.src = list[ side ][ index ].img;
         document.getElementById( 'storeContent' )
             .appendChild( img );
+        p.innerHTML = list[ side ][ index ].name;
+        document.getElementById( 'storeContent' )
+            .appendChild( p );
+        p = document.createElement( 'p' );
+        p.innerHTML = list[ side ][ index ].price;
+        document.getElementById( 'storeContent' )
+            .appendChild( p );
     }
-
 } );
 
 
-createShopItemList( items, false, false );
+createShopItemList( items, false, false, true );
