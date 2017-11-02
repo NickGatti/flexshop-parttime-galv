@@ -52,6 +52,7 @@ let createShopItemList = ( ( list, side, index, makeStore ) => {
             for ( let i = 0; i < list[ key ].length; i++ ) {
                 div = document.createElement( 'div' );
                 div.innerHTML = list[ key ][ i ].name;
+                div.className = 'clickable';
                 div.addEventListener( 'click', ( () => {
                     document.getElementById( 'storeContent' )
                         .innerHTML = '';

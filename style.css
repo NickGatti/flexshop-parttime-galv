@@ -12,6 +12,15 @@ body {
     align-content: center;
 }
 
+#shop {
+    cursor: pointer;
+    user-select: none;
+}
+
+.clickable:hover {
+    color: orange;
+}
+
 .innerWrapperDiv {
     display: flex;
     flex-flow: column wrap;
