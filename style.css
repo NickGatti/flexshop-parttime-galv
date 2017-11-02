@@ -8,17 +8,42 @@ body {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    align-items: center;
-    align-content: center;
+    align-items: stretch;
+    align-content: stretch;
+    margin: 2em;
 }
 
 #shop {
     cursor: pointer;
     user-select: none;
+    border: 3px solid black;
+    border-radius: 10px;
+    box-sizing: border-box;
+    width: 80%;
+    height: auto;
 }
 
 .clickable:hover {
     color: orange;
+}
+
+#donnieSHop {
+    border: 3px solid black;
+    border-radius: 10px;
+    box-sizing: border-box;
+    width: 80%;
+    height: auto;
+}
+
+#storeContent {
+    align-items: center;
+    justify-content: center;
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 50%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 1rem;
 }
 
 .innerWrapperDiv {
@@ -35,7 +60,8 @@ body {
     width: 100%;
     min-height: 20%;
     height: auto;
-    margin: 1em;
+    padding: 1rem;
+    margin: 0.25rem;
 }
 
 img {
