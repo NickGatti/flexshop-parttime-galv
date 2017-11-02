@@ -3,6 +3,7 @@ body {
     text-decoration: none;
     font-family: 'Lato', sans-serif;
     text-shadow: 1px 1px 0px rgba(150, 150, 150, 0.9);
+    background: #3F51B5;
 }
 
 .wrapper {
@@ -23,10 +24,11 @@ body {
     box-sizing: border-box;
     width: 80%;
     height: auto;
+    background: #90CAF9;
 }
 
 .clickable:hover {
-    color: orange;
+    color: #84FFFF;
 }
 
 #donnieSHop {
@@ -36,6 +38,7 @@ body {
     box-sizing: border-box;
     width: 80%;
     height: auto;
+    background: #90CAF9;
 }
 
 #storeContent {
@@ -48,15 +51,18 @@ body {
     height: auto;
     box-sizing: border-box;
     padding: 1rem;
+    background: #90CAF9;
 }
 
 #top {
+    text-align: center;
     border: 3px solid black;
     border-radius: 10px;
     box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.75);
-    margin: 2rem 2rem 0 2rem;
-    padding: 1rem;
+    margin: 3rem 2rem 0 2rem;
+    padding: 0 2rem 0 2rem;
     box-sizing: border-box;
+    background: #E1BEE7;
 }
 
 #bottom {
@@ -70,6 +76,7 @@ body {
     width: 100%;
     align-items: center;
     justify-content: center;
+    background: #E1BEE7;
 }
 
 .innerWrapperDiv {
