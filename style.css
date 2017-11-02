@@ -2,6 +2,7 @@ body {
     margin: 0;
     text-decoration: none;
     font-family: 'Lato', sans-serif;
+    text-shadow: 1px 1px 0px rgba(150, 150, 150, 0.9);
 }
 
 .wrapper {
@@ -17,7 +18,8 @@ body {
     cursor: pointer;
     user-select: none;
     border: 3px solid black;
-    border-radius: 10px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.75);
     box-sizing: border-box;
     width: 80%;
     height: auto;
@@ -30,6 +32,7 @@ body {
 #donnieSHop {
     border: 3px solid black;
     border-radius: 10px;
+    box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.75);
     box-sizing: border-box;
     width: 80%;
     height: auto;
@@ -40,10 +43,33 @@ body {
     justify-content: center;
     border: 3px solid black;
     border-radius: 10px;
+    box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.75);
     width: 50%;
     height: auto;
     box-sizing: border-box;
     padding: 1rem;
+}
+
+#top {
+    border: 3px solid black;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.75);
+    margin: 2rem 2rem 0 2rem;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+#bottom {
+    display: flex;
+    border: 3px solid black;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.75);
+    margin-top: 1.5rem;
+    padding: 0 2rem 0 2rem;
+    box-sizing: border-box;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 .innerWrapperDiv {
@@ -67,4 +93,7 @@ body {
 img {
     max-width: 50%;
     height: auto;
+    border: 3px solid black;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.75);
 }
