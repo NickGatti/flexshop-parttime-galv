@@ -96,5 +96,4 @@ let createShopItemList = ( ( list, side, index, makeStore ) => {
     }
 } );
 
-
 createShopItemList( items, false, false, true );
