@@ -28,6 +28,23 @@ let items = {
         name: 'DuraBeds&#8482;',
         price: 59.99,
         img: 'http://www.coolpetproducts.com/storage/post-images/nice-fancy-dog-bed.jpg?__SQUARESPACE_CACHEVERSION=1300049289042'
+    }, {
+        name: 'Frisbee',
+        price: 4.99,
+        img: 'https://wonderopolis.org/wp-content/uploads/2017/04/Frisbeedreamstime_xxl_4962268.jpg'
+    } ],
+    'Puppy Pictures': [ {
+        name: 'Cute Brown Puppy',
+        price: 499.99,
+        img: 'http://cdn3-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-21.jpg'
+    }, {
+        name: 'Cute White Puppy',
+        price: 499.99,
+        img: 'https://i.ytimg.com/vi/VRiWE1l8KqI/maxresdefault.jpg'
+    }, {
+        name: 'Cute Smiling Puppy',
+        price: 499.99,
+        img: 'http://www.zarias.com/wp-content/uploads/2015/12/61-cute-puppies.jpg'
     } ]
 };
 
